@@ -1,0 +1,171 @@
+#main{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#content{
+	padding: 10px;
+	background: rgba(240,240,240,0.8);
+	width: 45%;
+	height: 60%;
+	top: 25%;
+	position: absolute;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+#myname{
+	font-family: "Impact";
+	font-size: 3.5vw;
+	margin: 10px;
+	text-align: right;
+	color: rgb(0,105,92);
+}
+
+#myquote{
+	font-family: "RoundHand";
+	font-size: 2vw;
+	margin: 10px;
+	text-align: right;
+	color: rgb(0,105,92);
+}
+
+#development{
+	width: 100%;
+	height: 16%;
+	margin-top: 10px;
+}
+
+#additional{
+	width: 100%;
+	height: 16%;
+	margin-top: 30px;
+}
+
+#contact{
+	width: 100%;
+	height: 16%;
+	margin-top: 30px;
+}
+
+#contact-div.tail{
+	background-color: rgb(0,105,92);
+	color: white;
+	-webkit-transition: 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: 0.5s;
+}
+
+#contact-div.tail:hover{
+	background-color: #FF5722;
+	color: white;
+	cursor: pointer;
+}
+
+#moreinfo{
+	width: calc(100% - 18px);
+	height: 3vw;
+	margin-top: 30px;
+}
+
+#moreinfo-div{
+	background-color: rgba(255,255,255,0.6);
+	color: rgb(0,105,92);
+	border-radius: 10px;
+	height: 100%;
+	line-height: 3vw;
+	-webkit-transition: 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: 0.5s;
+}
+
+#moreinfo-div:hover{
+	background-color: rgba(0,105,92,1);
+	color: white;
+}
+
+
+.div25percent{
+	display: inline-block;
+	width: calc(25% - 18px);
+	height: 100%;
+	padding: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	vertical-align: top;
+	text-align: center;
+	font-size: 1vw;
+	background-color: rgba(255,255,255,0.6);
+	color: rgb(0,105,92);
+	-webkit-transition: 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: 0.5s;
+}
+
+.div25percent:hover{
+	background-color: rgba(255,255,255,0.3);
+}
+
+.div25percent.head{
+	background-color: rgba(0,105,92,1);
+	color: white;
+}
+
+.head{
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.tail{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.topic{
+	font-family: "Impact";
+	font-size: 1.5vw;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.icon{
+	height: calc(100% - 1vw);
+	width: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	background: yellow;
+	margin: 0;
+	background-image: url("../image/ta.png");
+
+	background-size: cover;
+
+	position: relative;
+
+	background-position: center;
+
+	font-family: Arial;
+}
+
+@font-face {
+    font-family: Impact;
+    src: url("font/Impact.ttf");
+}
+
+@font-face {
+    font-family: RoundHand;
+    src: url("font/SnellRoundhand.ttc");
+}
+
+
+a{
+	text-decoration: none;
+}
