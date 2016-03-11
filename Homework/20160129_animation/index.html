@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/animation.css">
+	<meta charset="UTF-8">
+	<title>CSS Animation Tutorial</title>
+</head>
+
+<body>
+<div id="Header">
+	<h1>วิธีการทำ Animation จอดรถ โดย HTML5 และ CSS</h1>
+</div>
+<div id="example">
+	<h2>ตัวอย่าง</h2>
+	<img src="image/car.PNG" id="mycar">
+</div>
+
+<div id="tutorial">
+	<h2>ขั้นตอนการสร้าง</h2>
+	<ol>
+		<li>สร้างไฟล์ HTML</li>
+
+		<div class = "code">
+		<code>
+			&lt;!DOCTYPE html&gt;<br/>
+			&lt;html&gt;<br/>
+			<span class="indent1">&Tab;</span>&lt;head&gt;<br/>
+			<span class="indent2">&Tab;&Tab;</span>&lt;meta charset="UTF-8"&gt;<br/>
+			<span class="indent2">&Tab;&Tab;</span>&lt;title&gt;CSS Animation Tutorial&lt;/title&gt;<br/>
+			<span class="indent1">&Tab;</span>&lt;/head&gt;<br/>
+			<span class="indent1">&Tab;</span>&lt;body&gt;<br/>
+			<span class="indent1">&Tab;</span>&lt;/body&gt;<br/>
+			&lt;/html&gt;<br/>
+		</code>
+		</div>
+
+		<li>แทรกรูปภาพลงไปใน tag body</li>
+
+		<div class = "code">
+		<code>
+			&lt;img src="car.PNG"&gt;
+		</code>
+		</div>
+
+		<li>ตั้ง id ให้กับรูปภาพที่แทรกไว้ เช่นในที่นี้ตั้งว่า mycar</li>
+		ตัวอย่างรูปภาพ : <br/>
+		<img src="image/car.PNG">
+		<div class = "code">
+		<code>
+			&lt;img src="car.PNG" id="mycar"&gt;
+		</code>
+		</div>
+
+		<li>
+			แทรก css เพื่อให้รถสามารถเคลื่อนที่ได้ <br/>
+			สังเกตที่ #mycar นั่นคือ id ของรูปรถที่เราได้สร้างไว้นั้นเอง
+		</li>
+
+		<div class = "code">
+		<code>
+			&lt;style type="text/css"&gt;<br/>
+				<span class="indent1">&Tab;</span>#mycar {<br/>
+				<span class="indent2">&Tab;&Tab;</span>position: relative;<br/>
+				<span class="indent2">&Tab;&Tab;</span>-webkit-animation-name: example;<br/>
+				<span class="indent2">&Tab;&Tab;</span>-webkit-animation-duration: 6s;<br/>
+				<span class="indent2">&Tab;&Tab;</span>animation-iteration-count: infinite;<br/>
+				<span class="indent1">&Tab;</span>}<br/>
+				<br/>
+				<span class="indent1">&Tab;</span>@-webkit-keyframes example {<br/>
+				<span class="indent2">&Tab;&Tab;</span>0%   {left:0px; top:0px;}<br/>
+				<span class="indent2">&Tab;&Tab;</span>100%  {left:500px; top:0px;}<br/>
+				<span class="indent1">&Tab;</span>}<br/>
+			&lt;/style&gt;
+		</code>
+		</div>
+
+	</ol>
+
+	<h2>Source Code ทั้งหมด</h2>
+	<div class = "code">
+	<code>
+		&lt;!DOCTYPE html&gt;<br/>
+		&lt;html&gt;<br/>
+		<span class="indent1">&Tab;</span>&lt;head&gt;<br/>
+		<span class="indent2">&Tab;&Tab;</span>&lt;meta charset="UTF-8"&gt;<br/>
+		<span class="indent2">&Tab;&Tab;</span>&lt;title&gt;CSS Animation Tutorial&lt;/title&gt;<br/>
+		<span class="indent2">&Tab;&Tab;</span>&lt;style type="text/css"&gt;<br/>
+			<span class="indent3">&Tab;&Tab;&Tab;</span>#mycar {<br/>
+			<span class="indent4">&Tab;&Tab;&Tab;&Tab;</span>position: relative;<br/>
+			<span class="indent4">&Tab;&Tab;&Tab;&Tab;</span>-webkit-animation-name: example;<br/>
+			<span class="indent4">&Tab;&Tab;&Tab;&Tab;</span>-webkit-animation-duration: 6s;<br/>
+			<span class="indent4">&Tab;&Tab;&Tab;&Tab;</span>animation-iteration-count: infinite;<br/>
+			<span class="indent3">&Tab;&Tab;&Tab;</span>}<br/>
+			<br/>
+			<span class="indent3">&Tab;&Tab;&Tab;</span>@-webkit-keyframes example {<br/>
+			<span class="indent4">&Tab;&Tab;&Tab;&Tab;</span>0%   {left:0px; top:0px;}<br/>
+			<span class="indent4">&Tab;&Tab;&Tab;&Tab;</span>100%  {left:calc(100% - 166px); top:0px;}<br/>
+			<span class="indent3">&Tab;&Tab;&Tab;</span>}<br/>
+		<span class="indent2">&Tab;&Tab;</span>&lt;/style&gt;<br/>
+		<span class="indent1">&Tab;</span>&lt;/head&gt;<br/>
+		<span class="indent1">&Tab;</span>&lt;body&gt;<br/>
+		<span class="indent2">&Tab;&Tab;</span>&lt;img src="car.jpg" id="mycar"&gt;<br/>
+		<span class="indent1">&Tab;</span>&lt;/body&gt;<br/>
+		&lt;/html&gt;<br/>
+	</code>
+	</div>
+</div>
+<br/>
+<div id="Footer">
+	จัดทำโดย <br/> นางสาวอภิชญา ทองสัมฤทธิ์ (5530623821) และ นายสัญชัย จักรธีรังกูร (5531070921)
+</div>
+</body>
+</html>

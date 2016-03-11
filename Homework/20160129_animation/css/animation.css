@@ -1,0 +1,70 @@
+#mycar {
+    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 6s; /* Chrome, Safari, Opera */
+    animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {left:0%; top:0px;}
+    100%  {left:calc(100% - 166px); top:0px;}
+}
+
+.indent1{
+	margin-left: 2em;
+}
+
+.indent2{
+	margin-left: 4em;
+}
+
+.indent3{
+	margin-left: 6em;
+}
+
+.indent4{
+	margin-left: 8em;
+}
+@font-face {
+    font-family: HeadingFont;
+    src: url("../font/DRkami.ttf");
+}
+@font-face {
+    font-family: Heading2Font;
+    src: url("../font/thaisanslite_r1.ttf");
+}
+@font-face {
+    font-family: BodyFont;
+    src: url("../font/THSarabunNew Bold.ttf");
+}
+#Header, #Footer{
+	background-color: #ffb09c;
+	color: #7c301c;
+	text-align: center;
+	padding: 1px;
+}
+h1 {
+	font-family: "HeadingFont";
+}
+h2 {
+	width: 8em;
+	font-size: 20pt;
+	text-decoration: underline;
+	background-color: #ffb09c;
+	color: #7c301c;
+	font-family: "Heading2Font";
+	padding: 5px;
+}
+body {
+	padding: 10px;
+	background-color: #ffd9c0;
+	font-family: "BodyFont";
+	font-size: 16pt;
+}
+.code {
+	padding: 6px;
+	font-size: 12pt;
+	color: #ffb09c;
+	background-color: #7c301c;
+}

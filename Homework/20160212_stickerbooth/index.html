@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/stickerbooth.css"/>
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/camera.js"></script>
+    <script src="js/stickerbooth.js"></script>
+    <title>Sticker Booth</title>
+</head>
+<body>
+<div id="wrapper">
+    <div id="framing">
+        <canvas id="photo" width="800" height="600"></canvas>
+        <div id="camera"></div>
+        <div id="countdown"></div>
+        <div id="overlay" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <div id="camera-control">
+        <button><img src="image/camera.png"></button>
+    </div>
+    <div id="toolbar">
+        <ul id="sticker-list">
+            <li><img src="sticker/glasses_01.png" class="draggable"/></li>
+            <li><img src="sticker/glasses_02.png" class="draggable"/></li>
+            <li><img src="sticker/dognose.png" class="draggable"/></li>
+            <li><img src="sticker/rednose.png" class="draggable"/></li>
+            <li><img src="sticker/tongue.png" class="draggable"/></li>
+            <li><img src="sticker/eye_01.png" class="draggable"/></li>
+            <li><img src="sticker/blush_01.png" class="draggable"/></li>
+        </ul>
+    </div>
+    <div id="Instruction">
+        <h1>Info</h1>
+        <div class="credit">By :<br/>Sanchai Jaktheerangkoon</div>
+        <div class="credit">Starter Code By :<br/>Assc.Prof. Dr. Atiwong Suchato</div>
+        <ul id="Instruction-list">
+            <li>Click camera to take a photo.</li>
+            <li>Drag photo from the right to the photo to insert sticker.</li>
+            <li>Click sticker on the photo to select or deselect.</li>
+            <li>Press [arrowkeys] to move the selected sticker.</li>
+            <li>Press [-] or [+] key to resize the selected sticker.</li>
+            <li>Press [SHIFT] + [left arrowkey] or [right arrowkey] to rotate the selected sticker.</li>
+            <li>Press [DELETE] or [d] to delete the selected sticker.</li>
+            <li>If you want to save the photo, printscreen by yourself! This application cannot save image!</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
